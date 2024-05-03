@@ -1,0 +1,270 @@
+
+
+
+@font-face {
+    font-family: "NEW.woff";
+    src: url("NEW.woff");
+}
+@font-face {
+  font-family: "Anarko.woff";
+  src: url("Anarko.woff") 
+}
+
+
+body{
+    background-color: #215ba4;
+      margin: 0; 
+      padding: 0; 
+      overflow-x: hidden; 
+  }
+
+
+.tab.random{
+    width: 100%;
+    line-height: 230px;
+    text-align: center;
+    background-color: #4f9eff;
+    font-family: "NEW.woff";
+    font-weight: bold;
+    
+}
+
+.tab.random span {
+  font-size: 90px;
+  text-align: center;
+  font-family: "NEW.woff";
+  font-weight: bold;
+  color: #ffffff; 
+  
+}
+
+
+
+@keyframes zoomInZoomOut {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  
+
+
+  .zoom-text {
+    position: center;
+    width: 100%;
+    text-align: center;
+    color: #ff0000; 
+    font-size: 5em; 
+    font-family:"NEW.woff";
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+ 
+  
+  .no-bots {
+    animation: zoomInZoomOut 4s infinite;
+    font-family: "Anarko.woff"; 
+  }
+
+  .no-bots {
+    animation: zoomInZoomOut 4s infinite;
+  }
+
+  .no-bots {
+    animation: zoomInZoomOut 4s infinite;
+  }
+  
+  
+  .bots-detected {
+    animation: zoomInZoomOut 4s infinite;
+    animation-delay: 2s;
+    color: #800000;
+  }
+
+  .bots-detected {
+    animation: zoomInZoomOut 4s infinite;
+    animation-delay: 2s;
+  }
+
+  .bots-detected {
+    animation: zoomInZoomOut 4s infinite;
+    animation-delay: 2s;
+  }
+
+  .footer-rectangle {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    background-color: #4f9eff; 
+    height: 50%;
+}
+
+.verify-box {
+
+  width: 280px; 
+  height: 140px; 
+  background-color: #215ba4;
+  color: #ffffff;
+  text-align: center;
+  line-height: 140px; 
+  position: absolute;
+  bottom: 5%; 
+  right: 5%; 
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "NEW.woff";
+  cursor: pointer;
+  border: none;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+body {
+  position: relative; 
+}
+
+
+@keyframes rotate360 {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes color-change {
+  0%, 100% { color: #ffffff; } 
+  50% { color: #11ac00; } 
+}
+
+.verify-box {
+  animation: rotate360 4s infinite ease-in-out,color-change 4s infinite linear;
+}
+
+.event-info-container {
+  position: absolute;
+  bottom: 2%; 
+  left: 4%; 
+  color: #db25f6; 
+  text-align: left; 
+  max-width: 800px; 
+  font-family: "NEW.woff";
+}
+
+.ONE {
+  font-size: 40px; 
+  margin-bottom: 20px; 
+  margin-left: 40px; 
+  color: #db25f6;
+}
+
+.TWO {
+  font-size: 40px; 
+  margin-bottom: 16px; 
+  margin-left: 100px; 
+  color: #db25f6;
+}
+
+.FIVE {
+  font-size: 40px; 
+  margin-bottom: 10px; 
+  margin-left: 20px; 
+  color: #db25f6;
+}
+
+
+
+
+
+.event-details {
+  font-size: 18px; 
+  margin-bottom: 4px; 
+  margin-left: 440px; 
+  position: relative;
+  top: -115px;
+  color: #ffffff;
+}
+
+
+.event-time {
+  font-size: 18px; 
+  margin-bottom: 4px; 
+  margin-left: 440px; 
+  position: relative;
+  top: -95px;
+  color: #ffffff;
+}
+
+
+.event-description {
+  font-size: 14px; 
+  line-height: 1.4; 
+  margin-top: 10px; 
+  margin-left: 18px; 
+  color: #ffffff;
+}
+
+
+@keyframes highlight {
+  0%, 100% { color: #ffffff; } 
+  25% { color: #db25f6; } 
+  75% { color: #ffffff; } 
+}
+
+
+.ONE, .TWO, .FIVE {
+  animation: highlight 9s infinite; 
+}
+
+
+.event-time, .event-details {
+  animation: highlight 9s infinite; 
+  animation-delay: 3s; 
+}
+
+
+.event-description {
+  animation: highlight 9s infinite;
+  animation-delay: 6s; 
+}
+
+.tab.random {
+  overflow: hidden; 
+}
+
+.tab.random span {
+  display: inline-block; 
+  position: relative; 
+  left: -100%; 
+  animation: slideInOut 6s linear infinite, colorChange 2s linear infinite;
+}
+
+@keyframes slideInOut {
+  0% {
+    left: 100%; 
+  }
+  50% {
+    left: 0%; 
+  }
+  100% {
+    left: -100%; 
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #ffffff; 
+  }
+  33% {
+    color: #db25f6; 
+  }
+  66% {
+    color: #800000; 
+  }
+  100% {
+    color: #11ac00; 
+  }
+  }
