@@ -1,0 +1,58 @@
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "hyodrof"
+}
+
+
+@font-face {
+    font-family: "Hyodrof"; /* This is just the name without file extension */
+    src: url("hyodrof.woff")
+}
+
+.section {
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #6cbced;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+#section1 {
+    background-color: #000000; /* Coral */
+    
+}
+
+
+
+
+#section2 {
+    background-color: #7fffd4; /* Aquamarine */
+}
+
+
+
+#section3 {
+    background-color: #4682b4; /* SteelBlue */
+}
+
+
+#section4 {
+    background-color: #da70d6; /* Orchid */
+}
+
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}

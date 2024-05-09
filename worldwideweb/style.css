@@ -1,0 +1,712 @@
+/* Dark background */
+
+@font-face {
+    font-family: "Hyodrof"; 
+    src: url("Hyodrof.woff")
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "hyodrof";
+}
+
+.splash-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; 
+    font-family:"hyodrof"; 
+    text-align: center;
+}
+
+.start-button {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #005081;
+    cursor: pointer;
+    font-size: 200%;
+    color: #6cbced;
+    width: 80%; 
+    height: 200px; 
+}
+
+
+
+.splash-screen h1 {
+    font-size: 2em;
+    color: #00f418; 
+    margin-top: -50px; 
+}
+
+
+
+
+
+
+
+.section {
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 80%; 
+    max-width: 1200px;
+}
+
+img {
+    width: 50%;
+    height: auto;
+    margin-right: 150px;
+}
+
+img {
+    flex: 0 0 auto; 
+    width: 40%; 
+    height: auto;
+    margin-right: 90px;
+}
+
+.container > div {
+    flex: 1; 
+    padding: 20px; 
+}
+
+/* Specific styling for sections with two images */
+.container.two-images img {
+    width: calc(25% - 10px); /* Adjusts each image width when there are two */
+}
+
+.container.two-images > div {
+    flex-grow: 2; 
+}
+
+/* Ensures no margin on the last image to maintain layout integrity */
+.container img:last-child {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+#zebras {
+    background:rgb(5, 42, 5);
+    color: #ffffff;
+}
+
+#zebras h1 {
+    font-size: 40px; 
+    margin-right: -20%;
+}
+
+#zebras p {
+    font-size: 20px; 
+    margin-right: -20%;
+}
+
+
+
+#chameleons {
+    background: #58ef9b;
+    color: #ffffff;
+}
+
+#chameleons .container {
+    display: flex;
+    align-items: center; 
+}
+
+#chameleons .image-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#chameleons .image-container img {
+    width: 80%; 
+    max-width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#chameleons .image-container img:last-child {
+    margin-bottom: 0;
+}
+
+#chameleons .text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 20px; 
+}
+
+
+#chameleons h1 {
+    font-size: 40px; 
+    margin-right: -10%;
+}
+
+#chameleons p {
+    font-size: 20px; 
+    margin-right: -10%;
+}
+
+
+
+
+#owls {
+    background: #645953;
+    color: #ffffff;
+}
+
+#owls .container {
+    display: flex;
+    align-items: center; 
+}
+
+#owls .image-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#owls .image-container img {
+    width: 80%; 
+    max-width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#owls .image-container img:last-child {
+    margin-bottom: 0;
+}
+
+#owls .text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 20px; 
+}
+
+
+#owls h1 {
+    font-size: 40px; 
+    margin-right: -10%;
+}
+
+#owls p {
+    font-size: 20px; 
+    margin-right: -10%;
+}
+
+
+
+
+
+#tiger {
+    background: #984e21;
+    color: #ffffff;
+}
+
+
+#tiger .container {
+    display: flex;
+    align-items: center; 
+}
+
+#tiger .image-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#tiger .image-container img {
+    width: 80%;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+#tiger .image-container img:last-child {
+    margin-bottom: 0; 
+}
+
+#tiger .text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 20px; 
+}
+
+
+#tiger h1 {
+    font-size: 40px; 
+    margin-right: -10%;
+}
+
+#tiger p {
+    font-size: 20px; 
+    margin-right: -10%;
+}
+
+
+
+
+
+#cheetah {
+    background: #b5956f;
+    color: #ffffff;
+}
+
+
+#cheetah .container {
+    display: flex;
+    align-items: center; 
+}
+
+#cheetah .image-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px; 
+    margin-right: 20px; 
+}
+
+#cheetah .image-container img {
+    width: 70%; 
+    max-width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#cheetah .image-container img:last-child {
+    margin-bottom: 0; 
+}
+
+#cheetah .text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 20px; 
+    margin-right: 30px; 
+}
+
+
+#cheetah h1 {
+    font-size: 40px; 
+    margin-right: -10%;
+}
+
+#cheetah p {
+    font-size: 20px; 
+    margin-right: -10%;
+}
+
+
+
+
+
+#snake {
+    background: #3c6a32;
+    color: #ffffff;
+}
+
+
+#snake .container {
+    display: flex;
+    align-items: center; 
+}
+
+#snake .image-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px; 
+    margin-right: 20px; 
+}
+
+#snake .image-container img {
+    width: 70%; 
+    max-width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#snake .image-container img:last-child {
+    margin-bottom: 0;
+}
+
+#snake .text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 20px; 
+    margin-right: 30px; 
+}
+
+
+#snake h1 {
+    font-size: 40px; 
+    margin-right: -10%;
+}
+
+#snake p {
+    font-size: 20px; 
+    margin-right: -10%;
+}
+
+
+
+
+
+#polarbear {
+    background: #8eacc8;
+    color: #ffffff;
+}
+
+#polarbear .container {
+    display: flex;
+    align-items: center; 
+}
+
+#polarbear .image-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px; 
+    margin-right: 20px; 
+}
+
+#polarbear .image-container img {
+    width: 70%; 
+    max-width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#polarbear .image-container img:last-child {
+    margin-bottom: 0; 
+}
+
+#polarbear .text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 20px; 
+    margin-right: 30px; 
+}
+
+
+#polarbear h1 {
+    font-size: 40px; 
+    margin-right: -10%;
+}
+
+#polarbear p {
+    font-size: 20px; 
+    margin-right: -10%;
+}
+
+
+
+
+
+
+
+#octopus {
+    background: #ffd37e;
+    color: #ffffff;
+}
+
+
+
+#octopus .container {
+    display: flex;
+    align-items: center; 
+}
+
+#octopus .image-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px; 
+    margin-right: 20px; 
+}
+
+#octopus .image-container img {
+    width: 70%; 
+    max-width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#octopus .image-container img:last-child {
+    margin-bottom: 0; 
+}
+
+#octopus .text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 20px; 
+    margin-right: 30px; 
+}
+
+
+#octopus h1 {
+    font-size: 40px; 
+    margin-right: -10%;
+}
+
+#octopus p {
+    font-size: 20px; 
+    margin-right: -10%;
+}
+
+
+
+
+
+
+
+#flounder {
+    background: #b6925a;
+    color: #ffffff;
+}
+
+
+
+#flounder .container {
+    display: flex;
+    align-items: center; 
+}
+
+#flounder .image-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px; 
+    margin-right: 20px; 
+}
+
+#flounder .image-container img {
+    width: 70%; 
+    max-width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#flounder .image-container img:last-child {
+    margin-bottom: 0; 
+}
+
+#flounder .text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 20px; 
+    margin-right: 30px; 
+}
+
+
+#flounder h1 {
+    font-size: 40px; 
+    margin-right: -10%;
+}
+
+#flounder p {
+    font-size: 20px; 
+    margin-right: -10%;
+}
+
+
+
+
+#seahorse {
+    background: #f2b5b0;
+    color: #ffffff;
+}
+
+
+#seahorse .container {
+    display: flex;
+    align-items: center; 
+}
+
+#seahorse .image-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px; 
+    margin-right: 20px; 
+}
+
+#seahorse .image-container img {
+    width: 70%; 
+    max-width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#seahorse .image-container img:last-child {
+    margin-bottom: 0; 
+}
+
+#seahorse .text-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-left: 20px; 
+    margin-right: 30px; 
+}
+
+
+#seahorse h1 {
+    font-size: 40px; 
+    margin-right: -10%;
+}
+
+#seahorse p {
+    font-size: 20px; 
+    margin-right: -10%;
+}
+
+
+.splash-screen.game-over {
+    font-size: 150px;
+    color: red;
+}
+
+.glitch-text {
+    position: relative;
+    color: red;
+    font-family: "hyodrof", monospace;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 100px;
+}
+
+.glitch-text::before, .glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: red;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    animation: glitch-text-animation 1s linear infinite;
+}
+
+.glitch-text::before {
+    left: 2px;
+    text-shadow: -1px 0 red;
+    animation-delay: .1s;
+}
+
+.glitch-text::after {
+    left: -2px;
+    text-shadow: 1px 0 red;
+    animation-delay: .2s;
+}
+
+@keyframes glitch-text-animation {
+    0%, 100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    10% {
+        clip-path: polygon(0 25%, 100% 25%, 100% 35%, 0 35%);
+    }
+    20% {
+        clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+    }
+    30% {
+        clip-path: polygon(0 65%, 100% 65%, 100% 75%, 0 75%);
+    }
+    40% {
+        clip-path: polygon(0 85%, 100% 85%, 100% 95%, 0 95%);
+    }
+}
+
+
+
+
+
+.glitch-button-text {
+    position: relative;
+    color: #6cbced; 
+    font-family: "hyodrof", monospace;
+    text-align: center;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 1.5em;
+}
+
+.glitch-button-text::before, .glitch-button-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #6cbced;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    animation: glitch-button-animation 1s linear infinite;
+}
+
+.glitch-button-text::before {
+    left: 2px;
+    text-shadow: -1px 0 blue;
+    animation-delay: .1s;
+}
+
+.glitch-button-text::after {
+    left: -2px;
+    text-shadow: 1px 0 red;
+    animation-delay: .2s;
+}
+
+@keyframes glitch-button-animation {
+    0%, 100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    10% {
+        clip-path: polygon(0 25%, 100% 25%, 100% 35%, 0 35%);
+    }
+    20% {
+        clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+    }
+    30% {
+        clip-path: polygon(0 65%, 100% 65%, 100% 75%, 0 75%);
+    }
+    40% {
+        clip-path: polygon(0 85%, 100% 85%, 100% 95%, 0 95%);
+    }
+}
+
+
+
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+

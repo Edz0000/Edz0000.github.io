@@ -1,59 +1,30 @@
 /*Setup project*/
 
-body{
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family:"hy";
     background-color: black;
-    color: white;
-    margin:0px;
-    padding: 0px;
-    font-size: 20px;
-    line-height: 21px;
+    color: #6cbced;
+    overflow: scroll;
 }
 
-div{
-    box-sizing: border-box;
-}
 
-img{
-    width:100%;
-}
 
-/*typograph*/
+@font-face {
+    font-family:"hy";
+    src: url("hydro.woff") 
+  }
 
-div.largetext{
-font-size: 100px;
-line-height: 90px;
-}
-
-div.mediumtext{
-font-size: 50px;
-line-height: 50px;
-}
-
-div.smalltext{
-font-size: 16px;
-line-height: 18px;
-}
-
-div.serif{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-div.sans{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-div.mono{
-    font-family: 'Courier New', Courier, monospace;
-}
 
 /*colours*/
 
-div.textblue{
-color: blue;
+div.textb1{
+color:#6cbced;
 }
 
-div.textred{
-    color: red;
+div.textb2{
+    color:#005081;
 }
 
 div.bggray{
@@ -64,44 +35,60 @@ div.bgwhite{
     background-color: white;
 }
 
-/*widths*/
 
-div.w100{
-    width: 100%;
+
+
+.screen {
+    position: relative; /* Allows absolute positioning inside this container */
+    height: 100%;
 }
 
-div.w80{
-    width: 80%;
+.wordready {
+    position: absolute; /* Absolute positioning */
+    top: 3%; /* Aligns to the top */
+    left: 5%; /* Aligns to the left */
+    padding: 20px;
+    font-size: 50px;
 }
 
-div.w75{
-    width: 75%;
+.small-box {
+    position: absolute;
+    top: 16%; /* Adjust the position to be right under the "READY" */
+    left: 6.7%;
+    width: 8px; /* Adjust width as needed */
+    height: 10px; /* Adjust height as needed */
+    padding: 10px;
+    background-color: #0000CD; /* Medium blue, can be changed as needed */
 }
 
-div.w66{
-    width: 66.666%;
+.title {
+    background-color: #00008B; /* Dark blue */
+    padding: 20px; /* Reduced padding might help */
+    font-size: 60px;
+    line-height: 1.5; /* Ensures proper line spacing */
+    text-align: center;
+    width: 70%;
+    height: 50%;
+    margin: auto; /* Centers the title block horizontally */
+    position: absolute; /* Positioned relative to screen */
+    top: 55%; /* Moves the top edge to the middle of the screen */
+    left: 50%; /* Moves the left edge to the middle of the screen */
+    transform: translate(-50%, -50%); /* Centers the block */
+    display: flex; /* Using flexbox to align content */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    box-sizing: border-box; /* Includes padding in width/height calculations */
+}
+    
+.footer {
+    position: fixed; /* Keeps the footer at the bottom of the viewport */
+    bottom: 0; /* Aligns the footer at the bottom */
+    left: 0; /* Aligns the footer to the left edge */
+    width: 100%; /* Ensures the footer spans the full width of the viewport */
+    height: 4px; /* Sets the thickness of the footer line */
+    background-color: #00008B; /* Sets the color of the footer line */
 }
 
-div.w60{
-    width: 60%;
-}
 
-div.w50{
-    width: 50%;
-}
 
-div.w40{
-    width: 40%;
-}
 
-div.w33{
-    width: 33.333%;
-}
-
-div.w25{
-    width: 25%;
-}
-
-div.w20{
-    width: 20%;
-}
