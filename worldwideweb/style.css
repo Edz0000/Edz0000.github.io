@@ -95,7 +95,7 @@ img {
     flex-grow: 2; 
 }
 
-/* Ensures no margin on the last image to maintain layout integrity */
+
 .container img:last-child {
     margin-right: 0;
 }
