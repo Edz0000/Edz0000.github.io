@@ -86,7 +86,7 @@ img {
     padding: 20px; 
 }
 
-/* Specific styling for sections with two images */
+/* Specific styling sections with two images */
 .container.two-images img {
     width: calc(25% - 10px); /* Adjusts each image width when there are two */
 }
