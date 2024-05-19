@@ -1,0 +1,403 @@
+/* Micro job classes */
+.textlarge {
+    font-size: 40px;
+}
+
+.textmedium {
+    font-size: 30px;
+}
+
+.textsmall {
+    font-size: 20px;
+}
+
+.width50 {
+    width: 50%;
+}
+
+.width80 {
+    width: 80%;
+}
+
+.textred {
+    color: red;
+}
+
+.textwhite {
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: "hyodrof";
+    src: url("hyodrof.woff") format("woff");
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "hyodrof", Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #084638;
+    color: #ffffff;
+}
+
+header {
+    background-color: #47875e;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero {
+    height: 90vh;
+    background: url('p1bg.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    background-position: 50% 80%;
+    background-size: cover;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 0 0 20px;
+}
+
+.hero-button {
+    background-color: #00f418;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #008f12;
+}
+
+.blog-grid {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-x: scroll;
+    background-color: #084638;
+    height: 80vh;
+}
+
+.blog-column {
+    flex: 1;
+    max-width: 25%;
+    overflow-y: scroll;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.blog-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog-post {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h2 {
+    font-size: 1.8em;
+    margin: 0 0 10px;
+}
+
+.blog-content p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.blog-post.zebra {
+    background-color: #10290a;
+}
+
+.blog-post.chameleon {
+    background-color: #85eba3;
+}
+
+.blog-post.owl {
+    background-color: #635954;
+}
+
+.blog-post.tiger {
+    background-color: #8f512c;
+}
+
+.blog-post.cheetah {
+    background-color: #b19674;
+}
+
+.blog-post.snake {
+    background-color: #476839;
+}
+
+.blog-post.polarbear {
+    background-color: #a9ddee;
+}
+
+.blog-post.octopus {
+    background-color: #3d6088;
+}
+
+.blog-post.flounder {
+    background-color: #b19362;
+}
+
+.blog-post.seahorse {
+    background-color: #e9b8b2;
+}
+
+.pattern-gallery {
+    padding: 10px;
+    background-color: #084638;
+    color: #fff;
+    text-align: center;
+}
+
+.pattern-gallery h2 {
+    font-size: 2.5em;
+    background-color: #47875e;
+    padding: 20px 0;
+    color: #ffffff;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+    text-align: center;
+}
+
+.pattern-gallery .content {
+    margin: 20px; 
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 20px;
+}
+
+.pattern-item {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.pattern-item:hover {
+    transform: scale(1.05);
+}
+
+.pattern-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.gif-gallery {
+    padding: 20px;
+    background-color: #084638;
+    color: #fff;
+    text-align: center;
+}
+
+.gif-gallery h2 {
+    font-size: 2.5em;
+   margin-top:10px;
+    background-color: #47875e;
+    padding: 20px 0;
+    color: #ffffff;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+    text-align: center;
+}
+
+
+.gif-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+}
+
+.gif-item {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    width: 100%; 
+    height: 200px; 
+}
+
+.gif-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.gif-item:hover {
+    transform: scale(1.05);
+}
+
+
+.fun-facts-section h2 {
+    font-size: 2.5em;
+    margin-top: 10px;
+    background-color: #47875e;
+    padding: 20px 0;
+    color: #ffffff;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0;
+    text-align: center;
+}
+
+
+.fun-facts {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 40px;
+}
+
+
+.fun-fact {
+    flex: 0 0 300px;
+    background-color: #47875e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -30px;
+    display: flex; /* Enables flexbox on the fun-fact element */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    text-align: center; /* Centers text inside the element */
+    transition: transform 0.3s ease-in-out;
+}
+
+.fun-fact.zebra-fact {
+    background-color: #a9ddee;
+}
+
+.fun-fact.chameleon-fact {
+    background-color: #85eba3;
+}
+
+.fun-fact.owl-fact {
+    background-color: #635954;
+}
+
+.fun-fact.tiger-fact {
+    background-color: #8f512c;
+}
+
+.fun-fact.cheetah-fact {
+    background-color: #b19674;
+}
+
+.fun-fact.snake-fact {
+    background-color: #476839;
+}
+
+.fun-fact.polarbear-fact {
+    background-color: #a9ddee;
+}
+
+.fun-fact.octopus-fact {
+    background-color: #3d6088;
+}
+
+.fun-fact.flounder-fact {
+    background-color: #b19362;
+}
+
+.fun-fact.seahorse-fact {
+    background-color: #e9b8b2;
+}
+
+.fun-fact {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fun-fact:hover {
+    transform: scale(1.05);
+}
+
+
+.chameleonlb {
+    display: block;
+    margin: 30px auto;
+   margin-top:5px ;
+   margin-bottom:50px ;
+    max-width: 600px; 
+    width: 100%;
+}
+
+.chameleonlb {
+    transition: transform 0.3s ease-in-out;
+}
+
+.chameleonlb:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
