@@ -37,12 +37,12 @@ body, html {
     padding: 0;
     font-family: "hyodrof", Arial, sans-serif;
     scroll-behavior: smooth;
-    background-color: #084638;
+    background-color: #4b775c;
     color: #ffffff;
 }
 
 header {
-    background-color: #47875e;
+    background-color: #315840;
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
@@ -100,7 +100,7 @@ header h1 {
     gap: 20px;
     padding: 20px;
     overflow-x: scroll;
-    background-color: #084638;
+    background-color: #4b775c;
     height: 80vh;
 }
 
@@ -144,55 +144,55 @@ header h1 {
 }
 
 .blog-post.zebra {
-    background-color: #10290a;
+    background-color: #315840;
 }
 
 .blog-post.chameleon {
-    background-color: #85eba3;
+    background-color: #315840;
 }
 
 .blog-post.owl {
-    background-color: #635954;
+    background-color: #315840;
 }
 
 .blog-post.tiger {
-    background-color: #8f512c;
+    background-color: #315840;
 }
 
 .blog-post.cheetah {
-    background-color: #b19674;
+    background-color: #315840;
 }
 
 .blog-post.snake {
-    background-color: #476839;
+    background-color: #315840;
 }
 
 .blog-post.polarbear {
-    background-color: #a9ddee;
+    background-color: #315840;
 }
 
 .blog-post.octopus {
-    background-color: #3d6088;
+    background-color: #315840;
 }
 
 .blog-post.flounder {
-    background-color: #b19362;
+    background-color: #315840;
 }
 
 .blog-post.seahorse {
-    background-color: #e9b8b2;
+    background-color: #315840;
 }
 
 .pattern-gallery {
     padding: 10px;
-    background-color: #084638;
+    background-color: #4b775c;
     color: #fff;
     text-align: center;
 }
 
 .pattern-gallery h2 {
     font-size: 2.5em;
-    background-color: #47875e;
+    background-color: #315840;
     padding: 20px 0;
     color: #ffffff;
     width: 100vw;
@@ -245,7 +245,7 @@ header h1 {
 
 .gif-gallery {
     padding: 20px;
-    background-color: #084638;
+    background-color: #4b775c;
     color: #fff;
     text-align: center;
 }
@@ -253,7 +253,7 @@ header h1 {
 .gif-gallery h2 {
     font-size: 2.5em;
    margin-top:10px;
-    background-color: #47875e;
+    background-color: 	#315840;
     padding: 20px 0;
     color: #ffffff;
     width: 100vw;
@@ -295,7 +295,7 @@ header h1 {
 .fun-facts-section h2 {
     font-size: 2.5em;
     margin-top: 10px;
-    background-color: #47875e;
+    background-color: #315840;
     padding: 20px 0;
     color: #ffffff;
     width: 100vw;
@@ -317,7 +317,7 @@ header h1 {
 
 .fun-fact {
     flex: 0 0 300px;
-    background-color: #47875e;
+    background-color: #315840;
     padding: 20px;
     border-radius: 10px;
     margin-top: -30px;
